@@ -1,5 +1,11 @@
 import Script from "next/script";
 
+// Set metadata
+export const metadata = {
+    title: "TravelOne Supplier",
+    description: "TravelOne Supplier",
+};
+
 export default function RootLayout({
     children,
 }: {

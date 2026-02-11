@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronUp } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
-import NewsletterSubscribe from './newsletter';
 
 // Define props
 type Props = {
@@ -30,7 +28,7 @@ export default function CommonFooter({ isStickyShow = false }: Props) {
     return (
         <>
             <footer className="bg-[#FFF9EE] text-black">
-                <div className={`max-w-7xl mx-auto px-6 space-y-12 ${isStickyShow ? 'pb-12' : 'pb-5'}`}>
+                <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
                     <div className="grid grid-cols-2 md:grid-cols-4 mb-0 md:mb-12 space-y-12 md:space-y-0">
                         {/* MENU 1 */}
                         <div className='space-y-6'>
